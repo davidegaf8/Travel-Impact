@@ -55,8 +55,8 @@ https://travel-impact.netlify.app/
 
 ## API Reference
 
- https://gist.github.com/tdreyno/4278655
- https://api.goclimate.com/docs
+ - https://gist.github.com/tdreyno/4278655
+ - https://api.goclimate.com/docs
 ## License
 
 Distributed under the MIT License. See the LICENSE file for more information.
