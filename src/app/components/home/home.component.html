@@ -1,0 +1,50 @@
+<section class="home">
+  <div class="container">
+    <h1>Carbon Footprint Calculator</h1>
+    <div class="airport-selection">
+      <!-- Departure Airport -->
+      <label for="departure-airport">Departure Airport</label>
+      <div class="input-container">
+        <input type="text" name="departureAirport" [(ngModel)]="departureAirport"
+          (input)="onSearchAirport(departureAirport, 'departure')" placeholder="Search by airport name, code,city or country"
+          autocomplete="off" id="departure-airport" />
+        <button *ngIf="departureAirport" class="clear-button" (click)="clearInput('departure')">×</button>
+      </div>
+      <ul *ngIf="filteredDepartureAirports.length > 0">
+        <li *ngFor="let airport of filteredDepartureAirports" (click)="selectAirport(airport, 'departure')">
+          {{ airport.name }} ({{ airport.code }}) - {{ airport.city }}, {{ airport.country }}
+        </li>
+      </ul>
+
+      <!-- Arrival Airport -->
+      <label for="arrival-airport">Arrival Airport</label>
+      <div class="input-container">
+        <input type="text" name="arrivalAirport" [(ngModel)]="arrivalAirport"
+          (input)="onSearchAirport(arrivalAirport, 'arrival')" placeholder="Search by airport name, code,city or country"
+          autocomplete="off" id="arrival-airport" />
+        <button *ngIf="arrivalAirport" class="clear-button" (click)="clearInput('arrival')">×</button>
+      </div>
+      <ul *ngIf="filteredArrivalAirports.length > 0">
+        <li *ngFor="let airport of filteredArrivalAirports" (click)="selectAirport(airport, 'arrival')">
+          {{ airport.name }} ({{ airport.code }}) - {{ airport.city }}, {{ airport.country }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="passengers">
+      <label for="passengers">Passengers</label>
+      <input type="number" [(ngModel)]="passengers" min="1" />
+    </div>
+    <div class="button-container">
+     <button class="calculate-button" (click)="calculateFootprint()"
+      [disabled]="!departureCode || !arrivalCode">Calculate CO2 Footprint</button>
+     <button class="reset-button" (click)="reset()">Clear</button>
+    </div>
+
+    <div *ngIf="footprint" class="result-box">
+      <p><span>CO2 per passenger:</span>{{ footprint }} kg</p>
+      <p><span>Total CO2:</span> {{ footprint * passengers }} kg</p>
+    </div>
+
+  </div>
+</section>

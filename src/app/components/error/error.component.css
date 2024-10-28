@@ -1,0 +1,102 @@
+/* Error Component Styles */
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 130px);
+    background-image: url("../../../assets/Img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .error-container {
+    max-width: 600px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    color: #333;
+  }
+  
+  .error h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--mint-green); /* Heading color */
+  }
+  
+  .error p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  /* Button Styles */
+  .error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .retry-button, .home-button {
+    padding: 5px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .retry-button {
+    background-color:var(--green);
+  }
+  
+  .retry-button:hover {
+    background-color: var(--mint-green);
+  }
+  
+  .home-button {
+    background-color:var(--green); /* Home button color */
+  }
+  
+  .home-button:hover {
+    background-color: var(--mint-green);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .error-container {
+      padding: 30px;
+    }
+  
+    .error h2 {
+      font-size: 28px;
+    }
+  
+    .error p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .error-container {
+      padding: 20px;
+    }
+  
+    .error h2 {
+      font-size: 24px;
+    }
+  
+    .error p {
+      font-size: 15px;
+    }
+  
+    .retry-button, .home-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

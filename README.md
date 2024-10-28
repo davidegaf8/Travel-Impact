@@ -1,27 +1,63 @@
-# TravelImpact
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+# Travel Impact 🌍✈️
 
-## Development server
+Travel Impact is a web application designed to calculate the carbon footprint of flights and promote eco-friendly travel decisions.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Main Features
 
-## Code scaffolding
+- Search and select departure and arrival airports to estimate flight CO₂ emissions.
+- Calculate emissions per passenger and total emissions for the journey.
+- Clean, minimalist UI focused on enhancing eco-conscious awareness.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Local Setup Instructions
 
-## Build
+### Prerequisites
+- **Node.js** (v14 or later)
+- **Angular CLI** (v12 or later)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation Steps
 
-## Running unit tests
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/davidegaf8/TravelImpact.git
+   cd Travel Impact
+ 
+2. **Install dependencies**
+    npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Run the appication**
+    ng serve
 
-## Running end-to-end tests
+4. **Access the app**
+   Visit http://localhost:4200/ in your browser to use the app locally.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Built with:
 
-## Further help
+**-** Angular: The primary framework used for building the application.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**-** RxJS: A library used for managing asynchronous functions and reactivity.
+
+**-** HTML & CSS: Custom written without external libraries for greater control over design.
+
+**-** Netlify: Used for hosting and deployment of the site.
+
+
+
+## Try it:
+
+https://travel-impact.netlify.app/
+
+
+## Authors
+
+- [@davidegaf8](https://github.com/davidegaf8)
+
+
+## API Reference
+
+ https://gist.github.com/tdreyno/4278655
+ https://api.goclimate.com/docs
+## License
+
+Distributed under the MIT License. See the LICENSE file for more information.
+
