@@ -19,7 +19,7 @@ Travel Impact is a web application designed to calculate the carbon footprint of
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/davidegaf8/TravelImpact.git
+   git clone https://github.com/davidegaf8/Travel-Impact.git
    cd Travel Impact
  
 2. **Install dependencies**
